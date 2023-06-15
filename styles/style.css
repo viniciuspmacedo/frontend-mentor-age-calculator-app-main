@@ -1,0 +1,112 @@
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: hsl(0, 0%, 86%);
+  min-width: 375px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 375px;
+  min-width: 350px;
+  margin-top: 10vh;
+  border-radius: 15px 15px 30% 15px;
+  width: 80vw;
+  background: hsl(0, 0%, 100%);
+  padding: 2rem 1rem;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 760px;
+    min-width: 500px;
+    padding: 3rem 4rem;
+  }
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid hsl(0, 0%, 86%);
+}
+form div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  form div {
+    justify-content: flex-start;
+  }
+}
+form .form-item {
+  display: inline-flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 10.6666666667px;
+  margin-bottom: 4px;
+  color: hsl(0, 1%, 44%);
+}
+form input {
+  width: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 8px;
+  padding: 18px 16px;
+}
+form input:hover {
+  cursor: pointer;
+}
+form input:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+@media screen and (min-width: 1024px) {
+  form input {
+    width: 144px;
+    margin-right: 30px;
+  }
+}
+form button {
+  align-self: center;
+  position: absolute;
+  top: 6.5rem;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  padding: 1px;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+}
+form button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+@media screen and (min-width: 1024px) {
+  form button {
+    right: 0;
+  }
+}
+form .error-message {
+  margin-top: 8px;
+  color: hsl(0, 100%, 67%);
+  font-size: 10.6666666667px;
+  height: 8px;
+}
+
+.results {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 64px;
+}
+.results span {
+  color: hsl(259, 100%, 65%);
+}/*# sourceMappingURL=style.css.map */
