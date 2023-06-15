@@ -11,7 +11,7 @@ export function validateDateOfBirth(date) {
     dayElement.parentNode.querySelector('.error-message').textContent = "";
 
 
-    if (date > currentDate || date.getDate() !== dayElement.value) {
+    if (date > currentDate && date.getDate() !== dayElement.value) {
         labels.forEach(label => {
             label.style.color = 'red'
         })
